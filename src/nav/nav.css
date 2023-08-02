@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Kannada&display=swap");
+.main_page {
+  padding-top: 20px;
+  background-color: #e3dadb;
+  /* background-color: #96c9cb; */
+  height: 100vh;
+  width: 100vw;
+}
+
+.main_menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main_menu h1 {
+  margin-left: 20px;
+}
+.img_sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.img_sec img {
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.noSelect {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.noSelect:focus {
+  outline: none !important;
+}

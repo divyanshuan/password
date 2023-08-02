@@ -1,0 +1,72 @@
+.main_section {
+  margin-top: 30px;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  overflow-x: scroll;
+  padding: 10px 20px;
+}
+.maincard {
+  width: 300px;
+  height: max-content;
+  font-family: "Tiro Kannada", serif;
+  background-color: #f6f2f2;
+  border: 1px solid #fffdfd;
+  padding-left: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+.maincard .head_section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.head_section img {
+  height: 35px;
+  border-radius: 50%;
+}
+.head_section h1 {
+  font-size: 35px;
+}
+
+.tail_section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0px 10px 10px 0px;
+  gap: 10px;
+}
+.mybtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+}
+.cardview {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .maincard {
+    width: 90%;
+  }
+  .main_section {
+    margin-top: 30px;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    overflow-x: scroll;
+    padding: 10px 0;
+  }
+}

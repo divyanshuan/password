@@ -1,0 +1,48 @@
+.add_section {
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+  font-family: "Nunito Sans", sans-serif;
+}
+.add_form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.add_form input {
+  height: 40px;
+  width: 100%;
+  font-size: 20px;
+  padding-left: 5px;
+  border-radius: 10px;
+  border: 1px solid #b5a2a6;
+  color: #5a404b;
+}
+.btn_sec {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.add_btn {
+  width: 30%;
+  height: 35px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #5a404b;
+  color: #ffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
