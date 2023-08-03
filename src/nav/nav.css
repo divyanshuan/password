@@ -2,7 +2,6 @@
 .main_page {
   padding-top: 20px;
   background-color: #e3dadb;
-  /* background-color: #96c9cb; */
   height: 100vh;
   width: 100vw;
 }
@@ -39,4 +38,11 @@
 }
 .noSelect:focus {
   outline: none !important;
+}
+.logout_btn {
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+  border: none;
+  background: transparent;
 }

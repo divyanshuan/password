@@ -36,7 +36,7 @@ const Login = () => {
       if (res.message === "authorized") {
         const acesstoken = response?.data?.access_token;
         localStorage.setItem("token", acesstoken);
-        navigate("/password/all");
+        navigate("/password/show");
       } else {
         // swal("Invalid Details", "Enter Correct details", "error");
         console.log("error");

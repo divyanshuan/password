@@ -1,10 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./nav.css";
 import { useAuthContextProvider } from "../Authcontext/authcontext";
 
 const Navbar = () => {
   const user = useAuthContextProvider();
+  const navigate = useNavigate();
   return (
     <div className="main_menu">
       <h1>
@@ -17,6 +18,19 @@ const Navbar = () => {
             alt="netflix logo"
           />
         </Link>
+        <button
+          className="logout_btn"
+          onClick={() => {
+            localStorage.removeItem("token");
+            localStorage.removeItem("userid");
+            navigate("/");
+          }}
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/7175/7175236.png"
+            alt="logout"
+          />
+        </button>
         <img src={user.userdata.profileimageurl} alt="profile_image" />
       </div>
     </div>

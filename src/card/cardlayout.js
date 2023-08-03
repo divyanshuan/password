@@ -5,7 +5,6 @@ import { useState } from "react";
 
 const Cardlayout = () => {
   const [data, setData] = useState(null);
-
   useEffect(() => {
     const userid = localStorage.getItem("userid");
     const getdata = () => {

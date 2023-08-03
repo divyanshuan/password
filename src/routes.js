@@ -11,12 +11,14 @@ import Cardlayout from "./card/cardlayout";
 import Addmenue from "./add/addmenue";
 import AuthContextProvider from "./Authcontext/authcontext";
 import Editmenue from "./add/editmenue";
+import Show from "./show/show";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<Login />} />
       <Route path="password" element={<Rootlayout />}>
+        <Route path="show" element={<Show />} />
         <Route path="all" element={<Cardlayout />} />
         <Route path="add" element={<Addmenue />} />
         <Route path="edit/:id" element={<Editmenue />} />
