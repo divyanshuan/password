@@ -53,6 +53,9 @@
 .cardview {
   width: 100%;
 }
+.card_head {
+  text-transform: capitalize;
+}
 
 @media only screen and (max-width: 600px) {
   .maincard {

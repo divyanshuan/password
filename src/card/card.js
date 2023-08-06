@@ -28,7 +28,7 @@ const Card = (props) => {
           src="https://cdn-icons-png.flaticon.com/128/9436/9436365.png"
           alt="netflix logo"
         />
-        <h1>{props.value.name}</h1>
+        <h1 className="card_head">{props.value.name}</h1>
       </div>
       <div className="main_content">
         {props.value.email != null ? (

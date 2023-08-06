@@ -1,17 +1,22 @@
 import React from "react";
+import "./show.css";
 import { useNavigate } from "react-router-dom";
 
 const Show = () => {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div className="show_container">
       <button
         onClick={() => {
           navigate("/password/all");
         }}
+        className="show_button"
       >
-        show
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/6177/6177685.png"
+          alt="Show_btn"
+        />
       </button>
     </div>
   );

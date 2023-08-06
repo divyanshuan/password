@@ -1,0 +1,10 @@
+.show_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.show_button {
+  border: none;
+  background: none;
+}
